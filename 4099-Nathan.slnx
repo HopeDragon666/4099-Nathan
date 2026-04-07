@@ -1,5 +1,6 @@
 ﻿<Solution>
   <Project Path="EditorAttributes.csproj" />
   <Project Path="EditorAttributes.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Assembly-CSharp-Editor-firstpass.csproj" />
 </Solution>
