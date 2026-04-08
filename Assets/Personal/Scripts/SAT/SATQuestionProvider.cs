@@ -7,24 +7,25 @@ namespace SAT
 {
     public class SATQuestionProvider : MonoBehaviour
     {
-        [SerializeField, Title("SAT Question Data")]
-        private TextAsset questionsJson;
+        [SerializeField, Title("SAT Question Data Files")]
+        private TextAsset easyQuestionsJson;
+
+        [SerializeField, Title("SAT Question Data Files")]
+        private TextAsset mediumQuestionsJson;
+
+        [SerializeField, Title("SAT Question Data Files")]
+        private TextAsset hardQuestionsJson;
+
+        [SerializeField, Title("SAT Question Data Files")]
+        private TextAsset expertQuestionsJson;
 
         [SerializeField, Title("Provider Settings")]
         private bool loadOnAwake = true;
 
-        private readonly Dictionary<string, List<SATQuestionEntry>> _questionsByAnswerWord =
-            new Dictionary<string, List<SATQuestionEntry>>(StringComparer.OrdinalIgnoreCase);
-
-        private readonly Dictionary<SATQuestionDifficulty, List<SATQuestionEntry>> _questionsByDifficulty =
-            new Dictionary<SATQuestionDifficulty, List<SATQuestionEntry>>();
-
-        private readonly Dictionary<SATQuestionDifficulty, Dictionary<string, List<SATQuestionEntry>>> _questionsByDifficultyAndAnswerWord =
-            new Dictionary<SATQuestionDifficulty, Dictionary<string, List<SATQuestionEntry>>>();
+        private readonly Dictionary<SATQuestionDifficulty, DifficultyCache> _difficultyCaches =
+            new Dictionary<SATQuestionDifficulty, DifficultyCache>();
 
         private bool _isLoaded;
-
-        public SATQuestionDataset LoadedDataset { get; private set; }
 
         private void Awake()
         {
@@ -36,28 +37,24 @@ namespace SAT
 
         public bool LoadQuestions()
         {
-            if (questionsJson == null || string.IsNullOrWhiteSpace(questionsJson.text))
+            // Build references only; question files are lazily loaded when queried.
+            ClearIndexes();
+            InitializeDifficultyCaches();
+
+            int configuredFiles = 0;
+            configuredFiles += AssignDifficultyAsset(SATQuestionDifficulty.Easy, easyQuestionsJson) ? 1 : 0;
+            configuredFiles += AssignDifficultyAsset(SATQuestionDifficulty.Medium, mediumQuestionsJson) ? 1 : 0;
+            configuredFiles += AssignDifficultyAsset(SATQuestionDifficulty.Hard, hardQuestionsJson) ? 1 : 0;
+            configuredFiles += AssignDifficultyAsset(SATQuestionDifficulty.Expert, expertQuestionsJson) ? 1 : 0;
+
+            if (configuredFiles == 0)
             {
-                Debug.LogError("SATQuestionProvider: Questions JSON is not assigned or is empty.");
+                print("[Error] SATQuestionProvider: No difficulty question files are assigned.");
                 _isLoaded = false;
-                LoadedDataset = null;
                 ClearIndexes();
                 return false;
             }
 
-            // Deserialize the generated dataset and build a fast lookup cache by answer word.
-            SATQuestionDataset parsedDataset = JsonUtility.FromJson<SATQuestionDataset>(questionsJson.text);
-            if (parsedDataset == null)
-            {
-                Debug.LogError("SATQuestionProvider: Failed to parse SAT questions JSON.");
-                _isLoaded = false;
-                LoadedDataset = null;
-                ClearIndexes();
-                return false;
-            }
-
-            LoadedDataset = parsedDataset;
-            BuildAnswerWordIndex(parsedDataset.questions);
             _isLoaded = true;
             return true;
         }
@@ -76,15 +73,15 @@ namespace SAT
 
             string key = answerWord.Trim();
 
-            // Difficulty filtering uses pre-built indexes so lookups stay fast even with very large datasets.
+            // Difficulty lookups load and index exactly one file when a filter is specified.
             if (difficultyFilter.HasValue)
             {
-                if (!_questionsByDifficultyAndAnswerWord.TryGetValue(difficultyFilter.Value, out Dictionary<string, List<SATQuestionEntry>> byWordForDifficulty))
+                if (!TryEnsureDifficultyLoaded(difficultyFilter.Value, out DifficultyCache cache))
                 {
                     return new List<SATQuestionEntry>();
                 }
 
-                if (!byWordForDifficulty.TryGetValue(key, out List<SATQuestionEntry> difficultyMatches))
+                if (!cache.QuestionsByAnswerWord.TryGetValue(key, out List<SATQuestionEntry> difficultyMatches))
                 {
                     return new List<SATQuestionEntry>();
                 }
@@ -92,12 +89,22 @@ namespace SAT
                 return new List<SATQuestionEntry>(difficultyMatches);
             }
 
-            if (!_questionsByAnswerWord.TryGetValue(key, out List<SATQuestionEntry> allMatches))
+            // Unfiltered lookups aggregate from whichever difficulty files are assigned.
+            List<SATQuestionEntry> allMatches = new List<SATQuestionEntry>();
+            foreach (SATQuestionDifficulty difficulty in Enum.GetValues(typeof(SATQuestionDifficulty)))
             {
-                return new List<SATQuestionEntry>();
+                if (!TryEnsureDifficultyLoaded(difficulty, out DifficultyCache cache))
+                {
+                    continue;
+                }
+
+                if (cache.QuestionsByAnswerWord.TryGetValue(key, out List<SATQuestionEntry> matches))
+                {
+                    allMatches.AddRange(matches);
+                }
             }
 
-            return new List<SATQuestionEntry>(allMatches);
+            return allMatches;
         }
 
         public List<SATQuestionEntry> GetQuestionsByDifficulty(SATQuestionDifficulty difficulty)
@@ -107,12 +114,12 @@ namespace SAT
                 return new List<SATQuestionEntry>();
             }
 
-            if (!_questionsByDifficulty.TryGetValue(difficulty, out List<SATQuestionEntry> matches))
+            if (!TryEnsureDifficultyLoaded(difficulty, out DifficultyCache cache))
             {
                 return new List<SATQuestionEntry>();
             }
 
-            return new List<SATQuestionEntry>(matches);
+            return new List<SATQuestionEntry>(cache.Questions);
         }
 
         public List<SATQuestionEntry> GetQuestionsForLearnedWords(IEnumerable<string> learnedWords, SATQuestionDifficulty? difficultyFilter = null)
@@ -153,10 +160,38 @@ namespace SAT
             return _isLoaded || LoadQuestions();
         }
 
-        private void BuildAnswerWordIndex(SATQuestionEntry[] questions)
+        private bool TryEnsureDifficultyLoaded(SATQuestionDifficulty difficulty, out DifficultyCache cache)
         {
-            ClearIndexes();
-            InitializeDifficultyIndexes();
+            if (!_difficultyCaches.TryGetValue(difficulty, out cache))
+            {
+                return false;
+            }
+
+            if (cache.IsLoaded)
+            {
+                return true;
+            }
+
+            if (cache.SourceAsset == null || string.IsNullOrWhiteSpace(cache.SourceAsset.text))
+            {
+                return false;
+            }
+
+            SATQuestionDataset parsedDataset = JsonUtility.FromJson<SATQuestionDataset>(cache.SourceAsset.text);
+            if (parsedDataset == null || parsedDataset.questions == null)
+            {
+                return false;
+            }
+
+            BuildCacheIndexes(cache, parsedDataset.questions, difficulty);
+            cache.IsLoaded = true;
+            return true;
+        }
+
+        private void BuildCacheIndexes(DifficultyCache cache, SATQuestionEntry[] questions, SATQuestionDifficulty expectedDifficulty)
+        {
+            cache.Questions.Clear();
+            cache.QuestionsByAnswerWord.Clear();
 
             if (questions == null)
             {
@@ -181,42 +216,50 @@ namespace SAT
                     continue;
                 }
 
+                if (parsedDifficulty != expectedDifficulty)
+                {
+                    continue;
+                }
+
                 string key = question.answerWord.Trim();
-                if (!_questionsByAnswerWord.TryGetValue(key, out List<SATQuestionEntry> list))
+                if (!cache.QuestionsByAnswerWord.TryGetValue(key, out List<SATQuestionEntry> list))
                 {
                     list = new List<SATQuestionEntry>();
-                    _questionsByAnswerWord.Add(key, list);
+                    cache.QuestionsByAnswerWord.Add(key, list);
                 }
 
                 list.Add(question);
-
-                _questionsByDifficulty[parsedDifficulty].Add(question);
-
-                Dictionary<string, List<SATQuestionEntry>> byWordForDifficulty = _questionsByDifficultyAndAnswerWord[parsedDifficulty];
-                if (!byWordForDifficulty.TryGetValue(key, out List<SATQuestionEntry> difficultyList))
-                {
-                    difficultyList = new List<SATQuestionEntry>();
-                    byWordForDifficulty.Add(key, difficultyList);
-                }
-
-                difficultyList.Add(question);
+                cache.Questions.Add(question);
             }
         }
 
-        private void InitializeDifficultyIndexes()
+        private void InitializeDifficultyCaches()
         {
             foreach (SATQuestionDifficulty difficulty in Enum.GetValues(typeof(SATQuestionDifficulty)))
             {
-                _questionsByDifficulty[difficulty] = new List<SATQuestionEntry>();
-                _questionsByDifficultyAndAnswerWord[difficulty] = new Dictionary<string, List<SATQuestionEntry>>(StringComparer.OrdinalIgnoreCase);
+                _difficultyCaches[difficulty] = new DifficultyCache
+                {
+                    Questions = new List<SATQuestionEntry>(),
+                    QuestionsByAnswerWord = new Dictionary<string, List<SATQuestionEntry>>(StringComparer.OrdinalIgnoreCase)
+                };
             }
         }
 
         private void ClearIndexes()
         {
-            _questionsByAnswerWord.Clear();
-            _questionsByDifficulty.Clear();
-            _questionsByDifficultyAndAnswerWord.Clear();
+            _difficultyCaches.Clear();
+        }
+
+        private bool AssignDifficultyAsset(SATQuestionDifficulty difficulty, TextAsset source)
+        {
+            if (!_difficultyCaches.TryGetValue(difficulty, out DifficultyCache cache))
+            {
+                return false;
+            }
+
+            cache.SourceAsset = source;
+            cache.IsLoaded = false;
+            return source != null;
         }
 
         private static string BuildQuestionDedupeKey(SATQuestionEntry question)
@@ -232,6 +275,14 @@ namespace SAT
             }
 
             return string.Format("{0}|{1}", question.answerWord ?? string.Empty, question.prompt ?? string.Empty);
+        }
+
+        private sealed class DifficultyCache
+        {
+            public TextAsset SourceAsset;
+            public bool IsLoaded;
+            public List<SATQuestionEntry> Questions;
+            public Dictionary<string, List<SATQuestionEntry>> QuestionsByAnswerWord;
         }
     }
 }

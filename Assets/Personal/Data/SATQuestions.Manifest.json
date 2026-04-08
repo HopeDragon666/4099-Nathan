@@ -1,0 +1,13 @@
+﻿{
+    "version":  1,
+    "seed":  40990407,
+    "generatedAtUtc":  "2026-04-08T00:09:13Z",
+    "sourceVocabularyFile":  "Assets/Personal/Data/Vocabs.csv",
+    "totalQuestions":  100,
+    "files":  {
+                  "Easy":  "Assets/Personal/Data/SATQuestions.Easy.json",
+                  "Medium":  "Assets/Personal/Data/SATQuestions.Medium.json",
+                  "Hard":  "Assets/Personal/Data/SATQuestions.Hard.json",
+                  "Expert":  "Assets/Personal/Data/SATQuestions.Expert.json"
+              }
+}

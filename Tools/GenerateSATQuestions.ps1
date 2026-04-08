@@ -7,7 +7,12 @@ param(
 $ErrorActionPreference = "Stop"
 
 $csvPath = Join-Path $ProjectRoot "Assets\Personal\Data\Vocabs.csv"
-$outPath = Join-Path $ProjectRoot "Assets\Personal\Data\SATQuestions.json"
+$difficultyFiles = [ordered]@{
+    Easy = Join-Path $ProjectRoot "Assets\Personal\Data\SATQuestions.Easy.json"
+    Medium = Join-Path $ProjectRoot "Assets\Personal\Data\SATQuestions.Medium.json"
+    Hard = Join-Path $ProjectRoot "Assets\Personal\Data\SATQuestions.Hard.json"
+    Expert = Join-Path $ProjectRoot "Assets\Personal\Data\SATQuestions.Expert.json"
+}
 
 if (-not (Test-Path $csvPath)) {
     throw "Vocabulary CSV not found at path: $csvPath"
@@ -516,19 +521,46 @@ for ($i = 0; $i -lt $selectedEntries.Count; $i++) {
     })
 }
 
-$dataset = [ordered]@{
-    version = 1
-    seed = $Seed
-    generatedAtUtc = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
-    sourceVocabularyFile = "Assets/Personal/Data/Vocabs.csv"
-    totalQuestions = $questions.Count
-    questions = $questions
+$generatedAtUtc = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
+
+foreach ($difficultyName in $difficultyFiles.Keys) {
+    $difficultyQuestions = @($questions | Where-Object { $_.difficulty -eq $difficultyName })
+    $difficultyDataset = [ordered]@{
+        version = 1
+        seed = $Seed
+        generatedAtUtc = $generatedAtUtc
+        sourceVocabularyFile = "Assets/Personal/Data/Vocabs.csv"
+        difficulty = $difficultyName
+        totalQuestions = $difficultyQuestions.Count
+        questions = $difficultyQuestions
+    }
+
+    $difficultyDataset | ConvertTo-Json -Depth 8 | Set-Content -Path $difficultyFiles[$difficultyName] -Encoding UTF8
 }
 
-$dataset | ConvertTo-Json -Depth 8 | Set-Content -Path $outPath -Encoding UTF8
+$manifestPath = Join-Path $ProjectRoot "Assets\Personal\Data\SATQuestions.Manifest.json"
+$manifest = [ordered]@{
+    version = 1
+    seed = $Seed
+    generatedAtUtc = $generatedAtUtc
+    sourceVocabularyFile = "Assets/Personal/Data/Vocabs.csv"
+    totalQuestions = $questions.Count
+    files = [ordered]@{
+        Easy = "Assets/Personal/Data/SATQuestions.Easy.json"
+        Medium = "Assets/Personal/Data/SATQuestions.Medium.json"
+        Hard = "Assets/Personal/Data/SATQuestions.Hard.json"
+        Expert = "Assets/Personal/Data/SATQuestions.Expert.json"
+    }
+}
+
+$manifest | ConvertTo-Json -Depth 6 | Set-Content -Path $manifestPath -Encoding UTF8
 
 $summary = [ordered]@{
-    outputPath = $outPath
+    manifestPath = $manifestPath
+    easyPath = $difficultyFiles.Easy
+    mediumPath = $difficultyFiles.Medium
+    hardPath = $difficultyFiles.Hard
+    expertPath = $difficultyFiles.Expert
     totalQuestions = $questions.Count
     uniqueAnswerWords = @($questions.answerWord | Sort-Object -Unique).Count
     easy = @($questions | Where-Object { $_.difficulty -eq "Easy" }).Count

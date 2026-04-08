@@ -1,0 +1,435 @@
+﻿{
+    "version":  1,
+    "seed":  40990407,
+    "generatedAtUtc":  "2026-04-08T00:09:13Z",
+    "sourceVocabularyFile":  "Assets/Personal/Data/Vocabs.csv",
+    "difficulty":  "Easy",
+    "totalQuestions":  25,
+    "questions":  [
+                      {
+                          "id":  "Q0002",
+                          "answerWord":  "Verity",
+                          "answerIndex":  5850,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "As the argument developed, the author returned repeatedly to the same ______.",
+                          "options":  [
+                                          "Holocaust",
+                                          "Verity",
+                                          "Desecration",
+                                          "Modernity"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "Truth, Fact Or Reality"
+                      },
+                      {
+                          "id":  "Q0005",
+                          "answerWord":  "Recalcitrant",
+                          "answerIndex":  4763,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "Because the process felt increasingly ______, the group asked for a simpler plan.",
+                          "options":  [
+                                          "Utmost",
+                                          "Recalcitrant",
+                                          "Fragile",
+                                          "Unduly"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "Resisting Authority Or Control"
+                      },
+                      {
+                          "id":  "Q0012",
+                          "answerWord":  "Empathy",
+                          "answerIndex":  1970,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "In class discussion, the professor framed ______ as the key idea to remember.",
+                          "options":  [
+                                          "Acme",
+                                          "Empathy",
+                                          "Technicality",
+                                          "Derring-Do"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "The Ability To Understand And Share The Feelings Of Others"
+                      },
+                      {
+                          "id":  "Q0024",
+                          "answerWord":  "Dialect",
+                          "answerIndex":  1593,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "By the end of the chapter, the narrator treated the ______ as a turning point.",
+                          "options":  [
+                                          "Machinist",
+                                          "Countenance",
+                                          "Dialect",
+                                          "Asset"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "A Socially Or Geographically Distinct Variant Of A Language"
+                      },
+                      {
+                          "id":  "Q0025",
+                          "answerWord":  "Disenfranchise",
+                          "answerIndex":  1690,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "Rather than ignore the issue, the director chose to ______ before the deadline passed.",
+                          "options":  [
+                                          "Disenfranchise",
+                                          "Abrade",
+                                          "Befog",
+                                          "Upcast"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Deprive Someone Of A Right Of Citizenship"
+                      },
+                      {
+                          "id":  "Q0026",
+                          "answerWord":  "Exasperation",
+                          "answerIndex":  2148,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "The report identified a ______ that explained the sudden change in outcomes.",
+                          "options":  [
+                                          "Empathy",
+                                          "Exasperation",
+                                          "Myriad",
+                                          "Ruffian"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "To Irritate Or Provoke To A High Degree, Annoy Extremely"
+                      },
+                      {
+                          "id":  "Q0028",
+                          "answerWord":  "Licentious",
+                          "answerIndex":  3428,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "Because the process felt increasingly ______, the group asked for a simpler plan.",
+                          "options":  [
+                                          "Carnal",
+                                          "Licentious",
+                                          "Askance",
+                                          "Radical"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "Sexually Unrestrained, Lascivious, Libertine, Lewd"
+                      },
+                      {
+                          "id":  "Q0030",
+                          "answerWord":  "Harass",
+                          "answerIndex":  2670,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "When new evidence appeared, investigators moved to ______ right away.",
+                          "options":  [
+                                          "Harass",
+                                          "Metamorphose",
+                                          "Infringe",
+                                          "Jaundice"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Fatigue Or To Tire With Repeated And Exhausting Efforts"
+                      },
+                      {
+                          "id":  "Q0041",
+                          "answerWord":  "Disputatious",
+                          "answerIndex":  1730,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "Critics called the proposal ______ and questioned whether it could succeed.",
+                          "options":  [
+                                          "Glacial",
+                                          "Disputatious",
+                                          "Festal",
+                                          "Dolesome"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "(Of A Person) Fond Of Having Heated Arguments"
+                      },
+                      {
+                          "id":  "Q0043",
+                          "answerWord":  "Pinch",
+                          "answerIndex":  4343,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "In class discussion, the professor framed ______ as the key idea to remember.",
+                          "options":  [
+                                          "Genealogy",
+                                          "Diffidence",
+                                          "Pinch",
+                                          "Pathology"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "To Squeeze Or Compress Between Something"
+                      },
+                      {
+                          "id":  "Q0050",
+                          "answerWord":  "Irate",
+                          "answerIndex":  3237,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "Negligible",
+                                          "Dissentious",
+                                          "Regretful",
+                                          "Irate"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Extremely Angry, Wrathful, Enraged"
+                      },
+                      {
+                          "id":  "Q0051",
+                          "answerWord":  "Vale",
+                          "answerIndex":  5794,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "During the field survey, the class documented a ______ near the riverbank.",
+                          "options":  [
+                                          "Vale",
+                                          "Irradiance",
+                                          "Touchstone",
+                                          "Anglophobia"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "Valley"
+                      },
+                      {
+                          "id":  "Q0053",
+                          "answerWord":  "Commute",
+                          "answerIndex":  1015,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "During negotiations, both sides agreed to ______ before tensions rose again.",
+                          "options":  [
+                                          "Equivocate",
+                                          "Bowdlerize",
+                                          "Commute",
+                                          "Recompense"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "To Travel From One\u0027S Home To One\u0027S Workplace"
+                      },
+                      {
+                          "id":  "Q0056",
+                          "answerWord":  "Chauvinist",
+                          "answerIndex":  910,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "Bereft",
+                                          "Gentile",
+                                          "Chauvinist",
+                                          "Cherubic"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "A Person Who Believes One Gender Is Superior To The Other"
+                      },
+                      {
+                          "id":  "Q0062",
+                          "answerWord":  "Adumbrate",
+                          "answerIndex":  132,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "After several warnings, the committee voted to ______ the outdated rule.",
+                          "options":  [
+                                          "Devise",
+                                          "Muddle",
+                                          "Adumbrate",
+                                          "Slake"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "To Foreshadow Vaguely"
+                      },
+                      {
+                          "id":  "Q0063",
+                          "answerWord":  "Combustion",
+                          "answerIndex":  997,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "During the interview, she referred to one ______ that shaped her decision.",
+                          "options":  [
+                                          "Maize",
+                                          "Combustion",
+                                          "Ardor",
+                                          "Archive"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "The Process Of Burning Something"
+                      },
+                      {
+                          "id":  "Q0069",
+                          "answerWord":  "Bullion",
+                          "answerIndex":  761,
+                          "grouping":  "Noun",
+                          "difficulty":  "Easy",
+                          "prompt":  "In class discussion, the professor framed ______ as the key idea to remember.",
+                          "options":  [
+                                          "Bullion",
+                                          "Inclination",
+                                          "Underpinning",
+                                          "Disyllable"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "A Bulk Quantity Of Precious Metal, Usually Gold Or Silver"
+                      },
+                      {
+                          "id":  "Q0073",
+                          "answerWord":  "Intersperse",
+                          "answerIndex":  3175,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "When new evidence appeared, investigators moved to ______ right away.",
+                          "options":  [
+                                          "Diddle",
+                                          "Degrade",
+                                          "Intersperse",
+                                          "Assay"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "To Mix Irregularly Something With Something Else"
+                      },
+                      {
+                          "id":  "Q0075",
+                          "answerWord":  "Deduce",
+                          "answerIndex":  1417,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "To solve the problem efficiently, the team had to ______ without waiting for more instructions.",
+                          "options":  [
+                                          "Patronize",
+                                          "Deduce",
+                                          "Speculate",
+                                          "Disarray"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "To Reach A Conclusion From Something Known Or Assumed"
+                      },
+                      {
+                          "id":  "Q0080",
+                          "answerWord":  "Ossify",
+                          "answerIndex":  4033,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "In her final draft, the editor decided to ______ the sentence so the argument stayed clear.",
+                          "options":  [
+                                          "Filibuster",
+                                          "Ossify",
+                                          "Accession",
+                                          "Instance"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "To Convert Into Or Cause To Harden Like Bone"
+                      },
+                      {
+                          "id":  "Q0084",
+                          "answerWord":  "Shunt",
+                          "answerIndex":  5163,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "During negotiations, both sides agreed to ______ before tensions rose again.",
+                          "options":  [
+                                          "Overleap",
+                                          "Shunt",
+                                          "Critique",
+                                          "Exculpate"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "To Turn Away Or Aside"
+                      },
+                      {
+                          "id":  "Q0087",
+                          "answerWord":  "Disinterested",
+                          "answerIndex":  1708,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "The team\u0027s approach seemed ______ at first, but the results proved otherwise.",
+                          "options":  [
+                                          "Disinterested",
+                                          "Demure",
+                                          "Inimical",
+                                          "Viable"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "Having No Stake Or Interest In The Outcome, Free Of Bias"
+                      },
+                      {
+                          "id":  "Q0093",
+                          "answerWord":  "Aggregate",
+                          "answerIndex":  168,
+                          "grouping":  "Verb",
+                          "difficulty":  "Easy",
+                          "prompt":  "During negotiations, both sides agreed to ______ before tensions rose again.",
+                          "options":  [
+                                          "Emanate",
+                                          "Attest",
+                                          "Circumscribe",
+                                          "Aggregate"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "To Bring Together, To Collect Into A Mass Or Sum"
+                      },
+                      {
+                          "id":  "Q0096",
+                          "answerWord":  "Phonetic",
+                          "answerIndex":  4320,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "The team\u0027s approach seemed ______ at first, but the results proved otherwise.",
+                          "options":  [
+                                          "Phonetic",
+                                          "Sublingual",
+                                          "Incontrovertible",
+                                          "Unbecoming"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "Relating To The Sounds Of Spoken Language"
+                      },
+                      {
+                          "id":  "Q0099",
+                          "answerWord":  "Bulbous",
+                          "answerIndex":  760,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Easy",
+                          "prompt":  "The team\u0027s approach seemed ______ at first, but the results proved otherwise.",
+                          "options":  [
+                                          "Defamatory",
+                                          "Avant-Garde",
+                                          "Disconsolate",
+                                          "Bulbous"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Having The Shape Of Or Resembling A Bulb, Bloated"
+                      }
+                  ]
+}

@@ -1,0 +1,435 @@
+﻿{
+    "version":  1,
+    "seed":  40990407,
+    "generatedAtUtc":  "2026-04-08T00:09:13Z",
+    "sourceVocabularyFile":  "Assets/Personal/Data/Vocabs.csv",
+    "difficulty":  "Expert",
+    "totalQuestions":  25,
+    "questions":  [
+                      {
+                          "id":  "Q0004",
+                          "answerWord":  "Soprano",
+                          "answerIndex":  5236,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "In rehearsal, the conductor highlighted the ______ that carried the melody.",
+                          "options":  [
+                                          "Kinfolk",
+                                          "Soprano",
+                                          "Ingénue",
+                                          "Cholera"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "The Highest Singing Voice In Women And Boys"
+                      },
+                      {
+                          "id":  "Q0007",
+                          "answerWord":  "Norm",
+                          "answerIndex":  3896,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "During the interview, she referred to one ______ that shaped her decision.",
+                          "options":  [
+                                          "Hoc",
+                                          "Donor",
+                                          "Norm",
+                                          "Acme"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "A Standard, Model, Or Pattern"
+                      },
+                      {
+                          "id":  "Q0010",
+                          "answerWord":  "Mantel",
+                          "answerIndex":  3571,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "By the end of the chapter, the narrator treated the ______ as a turning point.",
+                          "options":  [
+                                          "Brogan",
+                                          "Hubris",
+                                          "Mantel",
+                                          "Mishap"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "The Shelf Above A Fireplace"
+                      },
+                      {
+                          "id":  "Q0013",
+                          "answerWord":  "Dispel",
+                          "answerIndex":  1723,
+                          "grouping":  "Verb",
+                          "difficulty":  "Expert",
+                          "prompt":  "During negotiations, both sides agreed to ______ before tensions rose again.",
+                          "options":  [
+                                          "Dispel",
+                                          "Discolor",
+                                          "Eschew",
+                                          "Estrange"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Drive Away By Scattering, Or To Cause To Vanish"
+                      },
+                      {
+                          "id":  "Q0016",
+                          "answerWord":  "Crematory",
+                          "answerIndex":  1310,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "Because the process felt increasingly ______, the group asked for a simpler plan.",
+                          "options":  [
+                                          "Dauntless",
+                                          "Numerical",
+                                          "Crematory",
+                                          "Fluvial"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Pertaining To The Act Of Cremating Bodies"
+                      },
+                      {
+                          "id":  "Q0017",
+                          "answerWord":  "Spartan",
+                          "answerIndex":  5242,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "The team\u0027s approach seemed ______ at first, but the results proved otherwise.",
+                          "options":  [
+                                          "Jocose",
+                                          "Idyllic",
+                                          "Spartan",
+                                          "Amatory"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Austere, Frugal Or Characterized By Self-Denial"
+                      },
+                      {
+                          "id":  "Q0018",
+                          "answerWord":  "Lunar",
+                          "answerIndex":  3508,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "The team\u0027s approach seemed ______ at first, but the results proved otherwise.",
+                          "options":  [
+                                          "Lunar",
+                                          "Canny",
+                                          "Typographical",
+                                          "Exotic"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "Of, Or Pertaining To, The Moon"
+                      },
+                      {
+                          "id":  "Q0020",
+                          "answerWord":  "Salacious",
+                          "answerIndex":  5037,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "Her ______ response surprised the room and shifted the conversation immediately.",
+                          "options":  [
+                                          "Quizzical",
+                                          "Piecemeal",
+                                          "Audacious",
+                                          "Salacious"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Lustful Or Lecherous"
+                      },
+                      {
+                          "id":  "Q0031",
+                          "answerWord":  "Virtu",
+                          "answerIndex":  5889,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "The museum label described the artifact as a ______ with unusual historical value.",
+                          "options":  [
+                                          "Caste",
+                                          "Dogma",
+                                          "Sylph",
+                                          "Virtu"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Knowledge Of The Fine Arts"
+                      },
+                      {
+                          "id":  "Q0033",
+                          "answerWord":  "Felicitous",
+                          "answerIndex":  2297,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "The team\u0027s approach seemed ______ at first, but the results proved otherwise.",
+                          "options":  [
+                                          "Tenable",
+                                          "Peremptory",
+                                          "Felicitous",
+                                          "Sepulchral"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Well-Suited For The Occasion, As An Action Or Expression"
+                      },
+                      {
+                          "id":  "Q0034",
+                          "answerWord":  "Imitation",
+                          "answerIndex":  2834,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "In class discussion, the professor framed ______ as the key idea to remember.",
+                          "options":  [
+                                          "Egregious",
+                                          "Imitation",
+                                          "Gratification",
+                                          "Freemason"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "The Act Of Imitating"
+                      },
+                      {
+                          "id":  "Q0037",
+                          "answerWord":  "Transmission",
+                          "answerIndex":  5603,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "As the argument developed, the author returned repeatedly to the same ______.",
+                          "options":  [
+                                          "Desistance",
+                                          "Transmission",
+                                          "Riddance",
+                                          "Disavowal"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "The Act Of Sending Something Forward"
+                      },
+                      {
+                          "id":  "Q0039",
+                          "answerWord":  "Suppression",
+                          "answerIndex":  5415,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "By the end of the chapter, the narrator treated the ______ as a turning point.",
+                          "options":  [
+                                          "Resemblance",
+                                          "Connoisseur",
+                                          "Tutelage",
+                                          "Suppression"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "The Act Or Instance Of Repressing"
+                      },
+                      {
+                          "id":  "Q0040",
+                          "answerWord":  "Venal",
+                          "answerIndex":  5821,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "Because the process felt increasingly ______, the group asked for a simpler plan.",
+                          "options":  [
+                                          "Dulcet",
+                                          "Smug",
+                                          "Venal",
+                                          "Errant"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Willing To Sell One\u0027S Influence,  In Return For A Bribe"
+                      },
+                      {
+                          "id":  "Q0044",
+                          "answerWord":  "Stature",
+                          "answerIndex":  5294,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "At the preserve, visitors gathered to observe a ______ highlighted by the guide.",
+                          "options":  [
+                                          "Larceny",
+                                          "Killjoy",
+                                          "Stature",
+                                          "Nihilist"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "A Person Or Animal\u0027S Natural Height When Standing Upright"
+                      },
+                      {
+                          "id":  "Q0045",
+                          "answerWord":  "Raiment",
+                          "answerIndex":  4719,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "By the end of the chapter, the narrator treated the ______ as a turning point.",
+                          "options":  [
+                                          "Lineage",
+                                          "Pyre",
+                                          "Pennant",
+                                          "Raiment"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Clothing, Garments, Dress, Material"
+                      },
+                      {
+                          "id":  "Q0055",
+                          "answerWord":  "Demonstrate",
+                          "answerIndex":  1482,
+                          "grouping":  "Verb",
+                          "difficulty":  "Expert",
+                          "prompt":  "In her final draft, the editor decided to ______ the sentence so the argument stayed clear.",
+                          "options":  [
+                                          "Undercharge",
+                                          "Clamber",
+                                          "Demonstrate",
+                                          "Dilapidated"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Clearly Show The Truth Of (Something) Through Proof"
+                      },
+                      {
+                          "id":  "Q0060",
+                          "answerWord":  "Reflection",
+                          "answerIndex":  4828,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "The report identified a ______ that explained the sudden change in outcomes.",
+                          "options":  [
+                                          "Literature",
+                                          "Intimation",
+                                          "Homeopathy",
+                                          "Reflection"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "The Throwing Back Of Light, Heat Or Sound By A Surface"
+                      },
+                      {
+                          "id":  "Q0064",
+                          "answerWord":  "Disservice",
+                          "answerIndex":  1749,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "The museum label described the artifact as a ______ with unusual historical value.",
+                          "options":  [
+                                          "Maidenhood",
+                                          "Entomology",
+                                          "Disservice",
+                                          "Micrometer"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "An Ill Turn Or Injury"
+                      },
+                      {
+                          "id":  "Q0068",
+                          "answerWord":  "Pectoral",
+                          "answerIndex":  4179,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "The team\u0027s approach seemed ______ at first, but the results proved otherwise.",
+                          "options":  [
+                                          "Fungous",
+                                          "Dilatory",
+                                          "Emeritus",
+                                          "Pectoral"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Of Or Pertaining To The Breast, The Pectoral Muscles"
+                      },
+                      {
+                          "id":  "Q0072",
+                          "answerWord":  "Wary",
+                          "answerIndex":  5943,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "Wary",
+                                          "Optic",
+                                          "Euphoric",
+                                          "Lax"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "Watchful, Being On One\u0027S Guard Against Danger"
+                      },
+                      {
+                          "id":  "Q0076",
+                          "answerWord":  "Anatomy",
+                          "answerIndex":  270,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "During the interview, she referred to one ______ that shaped her decision.",
+                          "options":  [
+                                          "Anatomy",
+                                          "Dragnet",
+                                          "Furlong",
+                                          "Trajectory"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "The Art Of Studying The Different Parts Of An Organized Body"
+                      },
+                      {
+                          "id":  "Q0079",
+                          "answerWord":  "Solubility",
+                          "answerIndex":  5218,
+                          "grouping":  "Noun",
+                          "difficulty":  "Expert",
+                          "prompt":  "The museum label described the artifact as a ______ with unusual historical value.",
+                          "options":  [
+                                          "Heritage",
+                                          "Convention",
+                                          "Solubility",
+                                          "Solder"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "The Quality Or Property Of Being Soluble"
+                      },
+                      {
+                          "id":  "Q0085",
+                          "answerWord":  "Preternatural",
+                          "answerIndex":  4514,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "Comprehensible",
+                                          "Antemeridian",
+                                          "Preternatural",
+                                          "Adventitious"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Strange, Inexplicable, Extraordinary, Abnormal"
+                      },
+                      {
+                          "id":  "Q0091",
+                          "answerWord":  "Gigantic",
+                          "answerIndex":  2570,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Expert",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "Gigantic",
+                                          "Habitual",
+                                          "Esoteric",
+                                          "Grievous"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "Very Large"
+                      }
+                  ]
+}

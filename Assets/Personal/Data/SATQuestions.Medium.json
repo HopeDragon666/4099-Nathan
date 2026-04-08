@@ -1,0 +1,435 @@
+﻿{
+    "version":  1,
+    "seed":  40990407,
+    "generatedAtUtc":  "2026-04-08T00:09:13Z",
+    "sourceVocabularyFile":  "Assets/Personal/Data/Vocabs.csv",
+    "difficulty":  "Medium",
+    "totalQuestions":  25,
+    "questions":  [
+                      {
+                          "id":  "Q0001",
+                          "answerWord":  "Debonair",
+                          "answerIndex":  1380,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Her ______ response surprised the room and shifted the conversation immediately.",
+                          "options":  [
+                                          "Mendacious",
+                                          "Fanciless",
+                                          "Debonair",
+                                          "Achromatic"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Gracious, Courteous"
+                      },
+                      {
+                          "id":  "Q0003",
+                          "answerWord":  "Wrangle",
+                          "answerIndex":  5979,
+                          "grouping":  "Verb",
+                          "difficulty":  "Medium",
+                          "prompt":  "During negotiations, both sides agreed to ______ before tensions rose again.",
+                          "options":  [
+                                          "Wrangle",
+                                          "Abject",
+                                          "Caucus",
+                                          "Preengage"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Bicker, Or Quarrel Angrily And Noisily"
+                      },
+                      {
+                          "id":  "Q0009",
+                          "answerWord":  "Skeptical",
+                          "answerIndex":  5184,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Critics called the proposal ______ and questioned whether it could succeed.",
+                          "options":  [
+                                          "Syllabic",
+                                          "Skeptical",
+                                          "Sophistical",
+                                          "Diurnal"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "Having, Or Expressing Doubt, Questioning"
+                      },
+                      {
+                          "id":  "Q0014",
+                          "answerWord":  "Statute",
+                          "answerIndex":  5295,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "During deliberations, jurors kept returning to the same ______ in the testimony.",
+                          "options":  [
+                                          "Animus",
+                                          "Statute",
+                                          "Blockade",
+                                          "Narcissus"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "Written Law, As Laid Down By The Legislature"
+                      },
+                      {
+                          "id":  "Q0015",
+                          "answerWord":  "Hypothesis",
+                          "answerIndex":  2794,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "In class discussion, the professor framed ______ as the key idea to remember.",
+                          "options":  [
+                                          "Hypothesis",
+                                          "Assonance",
+                                          "Duration",
+                                          "Diligence"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "A Proposition Given As Explanation For A Group Of Phenomena"
+                      },
+                      {
+                          "id":  "Q0021",
+                          "answerWord":  "Fetus",
+                          "answerIndex":  2319,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "At the preserve, visitors gathered to observe a ______ highlighted by the guide.",
+                          "options":  [
+                                          "Defiance",
+                                          "Intension",
+                                          "Fetus",
+                                          "Equipoise"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "An Unborn Vertebrate Showing Signs Of The Mature Animal"
+                      },
+                      {
+                          "id":  "Q0022",
+                          "answerWord":  "Quintet",
+                          "answerIndex":  4702,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "In rehearsal, the conductor highlighted the ______ that carried the melody.",
+                          "options":  [
+                                          "Quintet",
+                                          "Viscosity",
+                                          "Testament",
+                                          "Dowry"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "(Music) A Composition In Five Parts"
+                      },
+                      {
+                          "id":  "Q0027",
+                          "answerWord":  "Censorious",
+                          "answerIndex":  879,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "Bacchanalian",
+                                          "Infernal",
+                                          "Censorious",
+                                          "Incisive"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Addicted To Censure And Scolding"
+                      },
+                      {
+                          "id":  "Q0029",
+                          "answerWord":  "Corporal",
+                          "answerIndex":  1245,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "She had a ______ manner, adapting to each social situation with little effort.",
+                          "options":  [
+                                          "Benevolent",
+                                          "Irrational",
+                                          "Aghast",
+                                          "Corporal"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Of The Human Body, Physical"
+                      },
+                      {
+                          "id":  "Q0032",
+                          "answerWord":  "Slipshod",
+                          "answerIndex":  5194,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Critics called the proposal ______ and questioned whether it could succeed.",
+                          "options":  [
+                                          "Pedestrian",
+                                          "Innocuous",
+                                          "Censurable",
+                                          "Slipshod"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Done Poorly Or Too Quickly, Slapdash"
+                      },
+                      {
+                          "id":  "Q0035",
+                          "answerWord":  "Battery",
+                          "answerIndex":  570,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "Military historians still debate the ______ that changed the course of the campaign.",
+                          "options":  [
+                                          "Battery",
+                                          "Addendum",
+                                          "Animosity",
+                                          "Augury"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "A Fortified Emplacement For Heavy Guns"
+                      },
+                      {
+                          "id":  "Q0036",
+                          "answerWord":  "Suspicious",
+                          "answerIndex":  5434,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Her ______ response surprised the room and shifted the conversation immediately.",
+                          "options":  [
+                                          "Corporal",
+                                          "Incomparable",
+                                          "Emollient",
+                                          "Suspicious"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Questionable"
+                      },
+                      {
+                          "id":  "Q0042",
+                          "answerWord":  "Vehement",
+                          "answerIndex":  5817,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Because the process felt increasingly ______, the group asked for a simpler plan.",
+                          "options":  [
+                                          "Athirst",
+                                          "Perfidious",
+                                          "Reclusive",
+                                          "Vehement"
+                                      ],
+                          "correctOptionIndex":  3,
+                          "correctOptionLabel":  "D",
+                          "sourceDefinition":  "Zealous, Ardent, Impassioned"
+                      },
+                      {
+                          "id":  "Q0046",
+                          "answerWord":  "Adoration",
+                          "answerIndex":  127,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "In the passage, the author treats ______ as a guiding principle of belief.",
+                          "options":  [
+                                          "Overture",
+                                          "Thearchy",
+                                          "Adoration",
+                                          "Suffragist"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "An Act Of Religious Worship"
+                      },
+                      {
+                          "id":  "Q0048",
+                          "answerWord":  "Cosmogony",
+                          "answerIndex":  1266,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "The textbook introduced ______ as a key term for understanding the chapter.",
+                          "options":  [
+                                          "Catalyst",
+                                          "Syllabus",
+                                          "Cosmogony",
+                                          "Codicil"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "A Branch Of Science Dealing With The Origin Of The Universe"
+                      },
+                      {
+                          "id":  "Q0052",
+                          "answerWord":  "Profusion",
+                          "answerIndex":  4559,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "The museum label described the artifact as a ______ with unusual historical value.",
+                          "options":  [
+                                          "Profusion",
+                                          "Centilitre",
+                                          "Disunion",
+                                          "Collier"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "Abundance, The State Of Being Profuse, A Cornucopia"
+                      },
+                      {
+                          "id":  "Q0057",
+                          "answerWord":  "Indictment",
+                          "answerIndex":  3005,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "As the argument developed, the author returned repeatedly to the same ______.",
+                          "options":  [
+                                          "Indictment",
+                                          "Alliance",
+                                          "Habitant",
+                                          "Renegade"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "A Formal Accusation Initiating A Criminal Case"
+                      },
+                      {
+                          "id":  "Q0065",
+                          "answerWord":  "Locative",
+                          "answerIndex":  3478,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "August",
+                                          "Permanent",
+                                          "Locative",
+                                          "Demulcent"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "Indicating Place, Or The Place Where, Or Wherein"
+                      },
+                      {
+                          "id":  "Q0066",
+                          "answerWord":  "Disinherit",
+                          "answerIndex":  1706,
+                          "grouping":  "Verb",
+                          "difficulty":  "Medium",
+                          "prompt":  "After several warnings, the committee voted to ______ the outdated rule.",
+                          "options":  [
+                                          "Disinherit",
+                                          "Venerate",
+                                          "Inhibit",
+                                          "Concur"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Exclude From Inheritance, To Disown"
+                      },
+                      {
+                          "id":  "Q0070",
+                          "answerWord":  "Bereave",
+                          "answerIndex":  615,
+                          "grouping":  "Verb",
+                          "difficulty":  "Medium",
+                          "prompt":  "Rather than ignore the issue, the director chose to ______ before the deadline passed.",
+                          "options":  [
+                                          "Caucus",
+                                          "Bereave",
+                                          "Antecede",
+                                          "Transfuse"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "To Deprive By Or As If By Violence, Rob, Strip"
+                      },
+                      {
+                          "id":  "Q0082",
+                          "answerWord":  "Feign",
+                          "answerIndex":  2294,
+                          "grouping":  "Verb",
+                          "difficulty":  "Medium",
+                          "prompt":  "After several warnings, the committee voted to ______ the outdated rule.",
+                          "options":  [
+                                          "Feign",
+                                          "Preclude",
+                                          "Jut",
+                                          "Broach"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Represent By A False Appearance Of, To Pretend"
+                      },
+                      {
+                          "id":  "Q0083",
+                          "answerWord":  "Adage",
+                          "answerIndex":  105,
+                          "grouping":  "Noun",
+                          "difficulty":  "Medium",
+                          "prompt":  "By the end of the chapter, the narrator treated the ______ as a turning point.",
+                          "options":  [
+                                          "Octagon",
+                                          "Panacea",
+                                          "Adage",
+                                          "Gratuity"
+                                      ],
+                          "correctOptionIndex":  2,
+                          "correctOptionLabel":  "C",
+                          "sourceDefinition":  "An Old Saying, Which Has Obtained Credit By Long Use"
+                      },
+                      {
+                          "id":  "Q0090",
+                          "answerWord":  "Disabuse",
+                          "answerIndex":  1638,
+                          "grouping":  "Verb",
+                          "difficulty":  "Medium",
+                          "prompt":  "When new evidence appeared, investigators moved to ______ right away.",
+                          "options":  [
+                                          "Disabuse",
+                                          "Augment",
+                                          "Vacillate",
+                                          "Congeal"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Persuade Someone That An Idea Or Belief Is Mistaken"
+                      },
+                      {
+                          "id":  "Q0092",
+                          "answerWord":  "Apprehensive",
+                          "answerIndex":  368,
+                          "grouping":  "Adjective",
+                          "difficulty":  "Medium",
+                          "prompt":  "Even during tense meetings, his tone remained ______ and professional.",
+                          "options":  [
+                                          "Squeamish",
+                                          "Apprehensive",
+                                          "Decapod",
+                                          "Requisite"
+                                      ],
+                          "correctOptionIndex":  1,
+                          "correctOptionLabel":  "B",
+                          "sourceDefinition":  "Anticipating Something With Anxiety Or Fear"
+                      },
+                      {
+                          "id":  "Q0094",
+                          "answerWord":  "Deploy",
+                          "answerIndex":  1506,
+                          "grouping":  "Verb",
+                          "difficulty":  "Medium",
+                          "prompt":  "Under heavy pressure, the unit had to ______ quickly to prevent further losses.",
+                          "options":  [
+                                          "Deploy",
+                                          "Moderate",
+                                          "Contend",
+                                          "Bulwark"
+                                      ],
+                          "correctOptionIndex":  0,
+                          "correctOptionLabel":  "A",
+                          "sourceDefinition":  "To Arrange (Usually A Military Unit Or Units) For Use"
+                      }
+                  ]
+}
